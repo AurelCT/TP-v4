@@ -1,0 +1,49 @@
+body {
+    background-image: url(../img/veg.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+ main h2 {
+    text-shadow: rgb(123, 61, 180) 20px 0 10px;
+}
+header {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-between
+}
+header h2 {
+    margin : 0;
+    padding: 0;
+}
+.layout {
+    display: flex;
+    justify-content: space-around;
+}
+.form {
+    color: white;
+    background-color: black;
+    opacity: .8;
+    border-radius: 10px;
+    padding: 50px;
+}
+.form-text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px;
+}
+.shoppingList {
+    color: black;
+    background-color: white;
+    opacity: .8;
+    border-radius: 10px;
+    padding: 50px;
+}
+/* button {
+    width: 20px;
+    height: 20px;
+} */

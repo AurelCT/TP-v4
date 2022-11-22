@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Web Storage</title>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h2>Liste de courses</h2>
+            <p> Supprimer un produit et vider le webstorage, modifier un produit</p>
+        </div>
+        <nav>
+            <a href="#">Etape 1</a>
+            <a href="#">Etape 2</a>
+        </nav>
+    </header>
+<main>
+    <h2>Gérer la liste de courses</h2>
+
+    <div class="layout">
+        <div class="form" id="form">
+            <form action="form">
+                <fieldset class="form-text">
+                    <legend>Saisir un produit</legend>
+                    <label for="product">produit :
+                        <input type="text" id="product" name="product">
+                    </label>
+                    <label for="quantity">Quantité :
+                        <input type="number" id="quantity" min="1" value="" step="any">
+                    </label>
+
+                    <fieldset class="checkbox">
+                        <legend>Conditionnement</legend>
+                        <label for="unit">Unité</label>
+                        <input type="radio" id="unit" value="unit" name="packaging" checked>
+                        <label for="kg">Kg</label>
+                        <input type="radio" id="kg" value="kg" name="packaging">
+                        <label for="box">Boite ou sachet</label>
+                        <input type="radio" id="box" value="box" name="packaging">
+                    </fieldset>
+                    
+                </fieldset>
+                
+                <button type="button" id="add-product">Valider</button>
+                <button type="reset" id="reset-product" >Annuler</button>
+
+            </form>
+        </div>
+
+        <div class="shoppingList">
+            <h3>Liste de courses</h3>
+            <div id="list"></div>
+            <button type="button" id="clear-list">Vider la liste</button>
+           
+        </div>
+    </div>
+
+</main>
+    
+<script src="js/webstorage.js"></script>    
+</body>
+</html>
